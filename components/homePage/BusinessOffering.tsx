@@ -1,9 +1,5 @@
-
+import { businessOfferingData } from "@/constantData/businessOfferingData";
 import Image from "next/image";
-import Concert from "../../public/images/Concerts.jpg";
-import Conference from "../../public/images/Conference.jpg"; 
-import CorporateEvents from "../../public/images/CorporateEvents.jpg";
-import PrivateEvents from "../../public/images/PrivateEvents.jpg";
 
 export default function BusinessOffering() {
   return (
@@ -13,123 +9,34 @@ export default function BusinessOffering() {
           <h2 className="text-5xl font-bold text-center mb-12">
             Our Business Offerings
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md ">
-              <h3 className="text-2xl font-bold mb-4">Corporate Events</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="h-[40dvh] w-[40dvw] bg-zinc-300 rounded-lg">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-x-8 gap-y-16">
+            {businessOfferingData.map((offering) => (
+              <div
+                className="bg-transparent p-6 rounded-lg group  hover:scale-105 transition-all transition-discrete ease-linear duration-500 hover:shadow-md hover:shadow-gray-400"
+                key={offering.id}
+              >
+                <h3 className="text-2xl font-bold mb-4">{offering.title}</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="h-[50dvh] w-[42dvw] bg-zinc-300 rounded-lg mask-r-from-25% group-hover:mask-none transition ease-in-out duration-1000">
                     <Image
-                      src={CorporateEvents}
-                      alt="Corporate Event"
+                      src={offering.imageSrc}
+                      alt={offering.title}
                       width={400}
                       height={400}
-                      className="object-cover w-full h-full rounded-lg mask-clip-border"
-                        />
-                </div>
-                <div className="c">
-                  <p className="text-gray-700">
-                    Professional AV solutions for business events including
-                    product launches, seminars, award ceremonies, and company
-                    meetings.
-                  </p>
-                  <br />
-                  <p className="c">
-                    In today&apos;s fast paced global environment, conferences
-                    demand more than just tables and chairs, they require
-                    precise coordination, seamless communication, and cutting
-                    edge technology.
-                  </p>
-                  <br />
-                  <p className="c">
-                    At NaiMedia Studio and Events, we specialize in delivering
-                    end to end multilingual conference services tailored to meet
-                    the demands of high level discussions, international
-                    summits, and executive board meetings.
-                  </p>
+                      // className="object-cover w-full hover:scale-105 transition-transform duration-500 h-full rounded-lg "
+                      className="object-cover w-full h-full rounded-lg "
+                    />
+                  </div>
+                  <div className="c">
+                    <p className="text-gray-700"></p>
+                    <br />
+                    <p className="c">{offering.textOne}</p>
+                    <br />
+                    <p className="c">{offering.textTwo}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md ">
-              <h3 className="text-2xl font-bold mb-4">Conferences</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="h-[40dvh] w-[40dvw] bg-zinc-300">
-                    <Image
-                      src={Conference}
-                      alt="Conference"
-                      width={400}
-                      height={400}
-                      className="object-cover w-full h-full rounded-lg"
-                        />
-                </div>
-                <div className="c">
-                  <p className="text-gray-700">
-                    We specialize in multilingual conference setups with
-                    interpretation booths, headsets, and audio-visual systems
-                  </p>
-                  <br />
-                  <p className="c">
-                    Whether you&apos;re organizing a local gig, a campus tour,
-                    or a full scale music festival, we deliver professional
-                    concert production services that elevate the experience for
-                    both performers and audiences. With cutting edge gear and a
-                    skilled crew, we bring your stage to life loud, clear, and
-                    unforgettable.
-                  </p>
-                  <br />
-                </div>
-              </div>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md ">
-              <h3 className="text-2xl font-bold mb-4">Concerts</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="h-[40dvh] w-[40dvw] bg-zinc-300">
-                    <Image
-                      src={Concert}
-                      alt="Concert"
-                      width={400}
-                      height={400}
-                      className="object-cover w-full h-full rounded-lg"
-                        />
-                </div>
-                <div className="c">
-                  <p className="text-gray-700">
-                    We ensure your performers sound and look great complete
-                    concert production setups — stages, Audio, Lighting,
-                    Rigging, and Visuals
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md ">
-              <h3 className="text-2xl font-bold mb-4">Private Events</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="h-[40dvh] w-[40dvw] bg-zinc-300">
-                    <Image
-                      src={PrivateEvents}
-                      alt="Private Event"
-                      width={400}
-                      height={400}
-                      className="object-cover w-full h-full rounded-lg"
-                        />
-                </div>
-                <div className="c">
-                  <p className="text-gray-700">
-                    We ensure your performers sound and look great complete
-                    concert production setups — stages, Audio, Lighting,
-                    Rigging, and Visuals
-                  </p>
-                  <br />
-                  <p className="c">
-                    We understand that private events are deeply personal and
-                    meaningful which is why we bring a touch of
-                    professionalism, refined style, and technical excellence to
-                    every occasion. Our goal is to ensure your special moments
-                    are not only flawlessly executed, but also beautifully
-                    memorable.
-                  </p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
