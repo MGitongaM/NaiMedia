@@ -50,24 +50,24 @@ export default function HeroSection() {
     <>
         <section className="bg-gray-200 h-dvh">
             <div className="conatiner grid grid-cols-1 md:grid-cols-2 gap-12 mt-10">
-                <div className="c">
-                    <h1 className="text-5xl w-6/12 mx-auto text-start font-bold mb-4">
+                <div className="">
+                    <h1 className="text-5xl w-7/12 mx-auto text-start font-bold mb-4">
                         Contact Us
                     </h1>
-                    <div className="w-6/12 mx-auto text-start mt-20">
+                    <div className="w-7/12 mx-auto text-start mt-20">
                         <p className="text-lg text-gray-700 mb-8">
-                            Working Hours: Monday - Friday, 9:00 AM - 6:00 PM
+                            Working Hours:<span className="font-medium"> Monday - Friday, 9:00 AM - 6:00 PM</span>
                         </p>
                         <br />
                         <p className="text-lg text-gray-700 mb-8">
-                            Phone: +254 123 456 789
+                            Phone:<span className="font-medium"> +254 123 456 789</span>
                         </p>
                         <br />
                         <p className="text-lg text-gray-700 mb-8">
-                            Email: naimediakenya@info.com
+                            Email:<span className="font-medium"> naimediakenya@info.com</span>
                         </p>
                         <br />
-                        <p className="text-lg text-gray-700 mb-8">
+                        <p className="text-lg font-semibold text-gray-700 mb-8 italic">
                             Let&apos;s make your next event unforgettable.
                         </p>
                     </div>

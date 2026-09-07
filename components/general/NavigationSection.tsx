@@ -13,9 +13,10 @@ import Link from "next/link";
 
 const navLinks = [
   { id: 1, title: "Home", href: "/" },
-  { id: 2, title: "About Us", href: "#" },
+  { id: 2, title: "About Us", href: "/about-us" },
   { id: 3, title: "Our Services", href: "/our-services" },
-  { id: 4, title: "Contact Us", href: "/contact-us" },
+  { id: 4, title: "Our Portfolio", href: "/our-portfolio" },
+  { id: 5, title: "Contact Us", href: "/contact-us" },
 ];
 export default function NavigationSection() {
   return (
