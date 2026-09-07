@@ -13,12 +13,12 @@ export default function BusinessOffering() {
             {businessOfferingData.map((offering) => (
               <div
                 // className="bg-transparent p-6 rounded-lg group  hover:scale-105 transition-all transition-discrete ease-linear duration-500 hover:shadow-md hover:shadow-gray-400"
-                className="bg-transparent p-6 rounded-lg group   transition-all transition-discrete ease-linear duration-500 hover:shadow-md hover:shadow-gray-400"
+                className="bg-transparent p-6 rounded-lg group   transition-all transition-discrete ease-linear duration-500 shadow-md lg:hover:shadow-md hover:shadow-gray-400"
                 key={offering.id}
               >
                 <h3 className="text-2xl font-bold mb-4">{offering.title}</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="h-[50dvh] w-[42dvw] bg-zinc-300 rounded-lg mask-r-from-25% group-hover:mask-none transition ease-in-out duration-1000">
+                  <div className="h-[50dvh] w-full md:w-[42dvw] bg-zinc-300 rounded-lg lg:mask-r-from-25% group-hover:mask-none transition ease-in-out duration-1000">
                     <Image
                       src={offering.imageSrc}
                       alt={offering.title}

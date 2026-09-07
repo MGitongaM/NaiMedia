@@ -6,10 +6,10 @@ export default function HeroSection() {
       <section className="bg-gray-200 h-dvh">
         <div className="container mx-auto px-4 py-20">
           
-          <h1 className="text-7xl w-6/12 mx-auto text-center font-bold mb-4">
+          <h1 className="text-6xl md:text-7xl w-full md:w-10/12 lg:w-6/12 mx-auto text-center font-bold mb-4">
             Create Events with Precision and Passion!
           </h1>
-          <div className="w-6/12 mx-auto text-center mt-20">
+          <div className="w-full md:w-10/12 lg:w-6/12 mx-auto text-center mt-20">
             <p className="text-lg text-gray-700 mb-8">
               Nairobi&apos;s trusted event management and equipment rental
               specialists.

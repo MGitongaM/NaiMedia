@@ -7,7 +7,7 @@ export default function TestimonialSection() {
       <section className="bg-gray-300 min-h-dvh ">
         <div className="container mx-auto px-4 py-20">
           <h2 className="text-5xl font-bold text-center mb-12">Testimonials</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-40 gap-y-40">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-40 gap-y-28 md:gap-y-40 my-20">
             {Testimonials.map((testimonial)=>(
               <div key={testimonial.id} className="bg-white p-6 rounded-lg shadow-md relative">
                 <p className="text-gray-700 mb-4 italic">
@@ -20,7 +20,7 @@ export default function TestimonialSection() {
                   width={400}
                   height={400}
                   alt={'image'}
-                  className="object-cover h-40 w-40 rounded-full absolute -right-15 -bottom-20"
+                  className="object-cover h-40 w-40 rounded-full absolute right-1 lg:-right-15 -bottom-20"
                   />
                 </div>
               </div>

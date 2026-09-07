@@ -23,14 +23,14 @@ export default function OurWorkSection() {
             {OurWorkData.map((work) => (
               <div
                 key={work.id}
-                className=" relative border min-h-72 border-amber-300 rounded-sm"
+                className=" relative border min-h-72  rounded-sm"
               >
                 <Image
                   src={work.imgSrc}
                   alt={work.name}
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover absolute top-0 z-10"
+                  className="object-cover absolute rounded-sm top-0 z-10"
                 />
                 <div className="absolute bottom-0 bg-amber-100 rounded-tr-sm  z-20">
                   <div className="relative px-2 py-1 text-slate-900">
