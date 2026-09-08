@@ -49,9 +49,9 @@ export default function HeroSection() {
   return (
     <>
         <section className="bg-gray-200 min-h-dvh">
-            <div className="conatiner grid grid-cols-1 lg:grid-cols-2 gap-12 mt-10 mb-20 px-3">
+            <div className="conatiner grid grid-cols-1 lg:grid-cols-2 gap-12 mt-40 mb-20 px-3">
                 <div className="">
-                    <h1 className="text-5xl w-full lg:w-7/12 mx-auto text-start font-bold mb-4">
+                    <h1 className="text-6xl md:text-7xl w-full lg:w-7/12 mx-auto text-start font-bold mb-4">
                         Contact Us
                     </h1>
                     <div className="w-full lg:w-7/12 mx-auto text-start mt-20">

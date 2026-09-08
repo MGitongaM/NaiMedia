@@ -3,20 +3,17 @@ export default function ValuePropositionSection() {
     <>
       <section className="bg-gray-400 min-h-[50dvh] ">
         <div className="container mx-auto px-4 py-20">
-          <h2 className="text-5xl font-bold text-center mb-12">
-            Why Choose Us?
+          <h2 className="text-5xl font-bold text-center">
+            Why Work With Us
+            {/* The NaiMedia Difference */}
           </h2>
-          <div className="flex flex-wrap justify-center gap-12 mb-20">
-            <div className="grid place-content-center bg-amber-200/40 rounded-sm px-4 py-2 w-[40dvw]">
-              <h3 className="text-xl font-extrabold ">The NaiMedia Difference</h3>
-            </div>
-            <div className="grid place-content-center bg-amber-300/50 rounded-sm px-4 py-2 w-[40dvw]">
+          <div className="grid place-content-center mt-4 mb-10">
               <p className="leading-7 ">
                 When you choose NaiMedia Kenya, you are partnering with
                 dedicated technical specialists committed to total operational
                 reliability.
               </p>
-            </div>
+           
           </div>
           <div className="space-y-12 my-10">
             <div className="bg-white p-6 rounded-lg shadow-md max-w-5xl">

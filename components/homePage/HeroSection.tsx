@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "../ui/button";
 
 export default function HeroSection() {
@@ -22,16 +23,18 @@ export default function HeroSection() {
               stage setups, and expert on site technical support.
             </p>
             <br />
-            <p className="text-lg text-gray-700 mb-8">
-              Let&apos;s make your next event unforgettable.
-            </p>
+            
             <div className="flex flex-wrap justify-center gap-4 my-8">
-              <Button className="bg-green-600 hover:bg-blue-400 text-white text-4xl font-bold py-8 px-4 rounded">
+              <Link href="/contact-us">
+              <Button className="bg-green-600 hover:bg-blue-400 text-white text-xl hover:scale-105 transition-all transition-discrete ease-linear duration-500 shadow-md font-bold py-8 px-4 rounded-sm">
                 Request a Quote
               </Button>
-              <Button variant="secondary" className="bg-green-100 hover:bg-blue-200 text-slate-800 text-4xl font-bold py-8 px-4 rounded">
+              </Link>
+              <Link href="/our-services">
+              <Button variant="secondary" className="bg-green-100 hover:bg-blue-200 text-slate-800 text-xl hover:scale-105 transition-all transition-discrete ease-linear duration-500 shadow-md font-bold py-8 px-4 rounded-lg">
                  Our Services
               </Button>
+              </Link>
             </div>
           </div>
         </div>

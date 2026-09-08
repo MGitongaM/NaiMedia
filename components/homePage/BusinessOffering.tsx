@@ -22,7 +22,7 @@ export default function BusinessOffering() {
               >
                 <h3 className="text-2xl md:text-4xl font-bold mb-8">{offering.title}</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="h-[50dvh] w-full md:w-[42dvw] bg-zinc-100 rounded-lg lg:mask-r-from-25% group-hover:mask-none transition ease-in-out duration-1000">
+                  <div className="min-h-[50dvh] w-full md:w-[42dvw] bg-zinc-100 rounded-lg lg:mask-r-from-25% group-hover:mask-none transition ease-in-out duration-1000">
                     <Image
                       src={offering.imageSrc}
                       alt={offering.title}
