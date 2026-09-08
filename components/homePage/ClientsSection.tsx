@@ -7,7 +7,11 @@ export default function ClientsSection() {
     <>
     <section className="bg-slate-100 min-h-dvh ">
         <div className="container mx-auto px-4 py-20">
-          <h2 className="text-5xl font-bold text-center mb-12">Brands that Trusted Us</h2>
+          <div className="text-center text-balance my-14">
+          <h2 className="text-5xl font-bold text-center my-8">Brands that Trusted Us</h2>
+            <p className="text-lg font-semibold">Trusted by Industry Leaders Across East Africa</p>
+            <p className="leading-7">Partnering with top brands, financial institutions, and hospitality leaders to deliver world-class event experiences.</p>
+          </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {brands.map((brand)=>(
                 <div key={brand.id} className="group bg-white p-6 rounded-lg shadow-sm hover:shadow-2md transition-all transition-discrete ease-linear duration-500">
