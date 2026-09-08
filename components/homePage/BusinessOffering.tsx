@@ -5,7 +5,7 @@ import CloudinaryImage from "../mediaAssets/CloudinaryImage";
 export default function BusinessOffering() {
   return (
     <>
-      <section className="bg-gray-200 min-h-dvh ">
+      <section className="bg-slate-50 min-h-dvh ">
         <div className="container mx-auto px-4 py-20">
           <div className="text-center text-balance mb-12">
             <h2 className="text-5xl font-bold ">Our Business Offerings</h2>

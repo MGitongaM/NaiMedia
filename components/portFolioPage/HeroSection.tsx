@@ -1,6 +1,7 @@
 export default function HeroSection() {
   return (
-    <section className="bg-gray-200 min-h-[50dvh] mask-b-from-90% mask-b-to-gray-200 ">
+    // <section className=" bg-[url('https://res.cloudinary.com/hqho8qw7/image/upload/v1788874114/home-hero-bg.jpg')] min-h-[50dvh] mask-b-from-90% mask-b-to-gray-200 ">
+    <section className=" bg-slate-200 min-h-[50dvh] ">
       <div className="container mx-auto px-4 py-20 ">
         <div className="max-w-4xl text-balance mx-auto mt-20 mb-12">
           <h1 className="text-6xl md:text-7xl font-bold text-center">
