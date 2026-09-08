@@ -1,13 +1,8 @@
-import Concert from "../public/images/Concerts.jpg";
-import Conference from "../public/images/Conference.jpg";
-import CorporateEvents from "../public/images/CorporateEvents.jpg";
-import PrivateEvents from "../public/images/PrivateEvents.jpg";
-
 export const businessOfferingData = [
   {
     id: 1,
     title: "Corporate Events",
-    imageSrc: CorporateEvents,
+    imageSrc: "CorporateEvents_1",
     textOne: `Transform corporate gatherings into high impact brand experiences with precision audiovisual execution.`,
     textTwo: ` In the corporate world, technical glitches are direct threats to brand reputation. Whether you are
      unveiling a flagship product to global media, hosting an annual general meeting (AGM), or honoring industry 
@@ -27,7 +22,7 @@ export const businessOfferingData = [
   {
     id: 2,
     title: "Conferences & Summits",
-    imageSrc: Conference,
+    imageSrc: "Conference_1",
     textOne: `End to end conference infrastructure for seamless cross border communication and diplomatic assemblies.`,
     textTwo: `Nairobi is Africa's diplomatic and NGO hub, hosting international delegates from around the globe.
      Managing multi day summits requires far more than basic public address systems. It demands ISO compliant 
@@ -46,7 +41,7 @@ export const businessOfferingData = [
   {
     id: 3,
     title: "Concerts",
-    imageSrc: Concert,
+    imageSrc: "Concerts_1",
     textOne: `Festival grade audio, intelligent lighting, and heavy duty staging built to energize massive audiences`,
     textTwo: `Live entertainment demands high energy, structural safety, and unyielding performance under pressure.
      From multi day music festivals and national tours to university gigs and album launches, we bring the raw 
@@ -65,7 +60,7 @@ export const businessOfferingData = [
   {
     id: 4,
     title: "Private Events",
-    imageSrc: PrivateEvents,
+    imageSrc: "PrivateEvents_1",
     textOne: `Understated elegance, ambient atmospheric design, and flawless execution for life's milestone moments.`,
     textTwo: `Private celebrations, from destination weddings and milestone birthdays to VIP anniversary galas,
     are deeply personal. We believe technology for private events should enhance the mood without cluttering

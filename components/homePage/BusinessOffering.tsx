@@ -1,5 +1,6 @@
 import { businessOfferingData } from "@/constantData/businessOfferingData";
-import Image from "next/image";
+
+import CloudinaryImage from "../mediaAssets/CloudinaryImage";
 
 export default function BusinessOffering() {
   return (
@@ -20,16 +21,19 @@ export default function BusinessOffering() {
                 className="bg-transparent px-6 py-12 rounded-lg group   transition-all transition-discrete ease-linear duration-500 shadow-md lg:hover:shadow-md hover:shadow-gray-400"
                 key={offering.id}
               >
-                <h3 className="text-2xl md:text-4xl font-bold mb-8">{offering.title}</h3>
+                <h3 className="text-2xl md:text-4xl font-bold mb-8">
+                  {offering.title}
+                </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="min-h-[50dvh] w-full md:w-[42dvw] bg-zinc-100 rounded-lg lg:mask-r-from-25% group-hover:mask-none transition ease-in-out duration-1000">
-                    <Image
-                      src={offering.imageSrc}
-                      alt={offering.title}
-                      width={400}
+                    <CloudinaryImage
+                      imgSrc={offering.imageSrc}
                       height={400}
-                      className="object-cover w-full group-hover:scale-95 transition-transform duration-700 h-full rounded-lg "
-                      // className="object-cover w-full h-full rounded-lg "
+                      width={400}
+                      alt={`${offering.title} image`}
+                      classNames={
+                        "object-cover w-full group-hover:scale-95 transition-transform duration-700 h-full rounded-lg"
+                      }
                     />
                   </div>
                   <div className="">

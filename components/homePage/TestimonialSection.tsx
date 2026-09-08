@@ -1,5 +1,6 @@
 import { Testimonials } from "@/constantData/testimonialData";
-import Image from "next/image";
+
+import CloudinaryImage from "../mediaAssets/CloudinaryImage";
 
 export default function TestimonialSection() {
   return (
@@ -20,12 +21,14 @@ export default function TestimonialSection() {
                   - {testimonial.name}, {testimonial.title}
                 </p>
                 <div className="c">
-                  <Image
-                    src={testimonial.imgSrc}
-                    width={400}
+                  <CloudinaryImage
+                    imgSrc={testimonial.imgSrc}
                     height={400}
-                    alt={"image"}
-                    className="object-cover h-24 md:h-40 w-24 md:w-40 rounded-full absolute right-1 lg:-right-15 -bottom-20"
+                    width={400}
+                    alt={`${testimonial.title} image`}
+                    classNames={
+                      "object-cover h-24 md:h-40 w-24 md:w-40 rounded-full absolute right-1 lg:-right-15 -bottom-20"
+                    }
                   />
                 </div>
               </div>

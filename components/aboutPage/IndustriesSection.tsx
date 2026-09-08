@@ -1,5 +1,5 @@
 import { IndustriesServed } from "@/constantData/industriesData";
-import Image from "next/image";
+import CloudinaryImage from "../mediaAssets/CloudinaryImage";
 
 export default function IndustriesSection() {
   return (
@@ -23,12 +23,19 @@ export default function IndustriesSection() {
               key={industry.id}
               className="relative border border-amber-300 min-h-80 w-full rounded-sm overflow-hidden group"
             >
-              <Image
+              {/* <Image
                 src={industry.imgSrc}
                 alt={industry.name}
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 className="object-cover -z-10"
+              /> */}
+              <CloudinaryImage
+                imgSrc={industry.imgSrc}
+                height={400}
+                width={400}
+                alt={`${industry.name} image`}
+                classNames={"object-cover h-80 w-full -z-20"}
               />
               <div className="absolute inset-0 bg-black/85 group-hover:bg-black/60 transition-colors -z-5" />
               <div className="relative p-6 text-white">
