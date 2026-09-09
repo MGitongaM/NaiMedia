@@ -14,7 +14,10 @@ export default function errorPage() {
             alt={`404 image`}
             classNames={"object-cover h-80 w-full "}
           />
-          <h2 className="text-lg text-center bg-red-50 px-2 py-1 rounded font-semibold mt-8">Ooops Looks Like we have an error, please fresh the page or try again later</h2>
+          <h2 className="text-lg text-center bg-red-50 px-2 py-1 rounded font-semibold mt-8">
+            Ooops Looks Like we have an error, please fresh the page or try
+            again later
+          </h2>
         </div>
       </section>
     </>

@@ -34,8 +34,8 @@ export default function NavigationSection() {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <nav className="bg-gray-200/50 backdrop-blur-md fixed z-50">
-        <NavigationMenu className="  min-w-[98dvw] sticky top-0 ">
+      <nav className=" fixed z-50">
+        <NavigationMenu className=" bg-slate-100/50 backdrop-blur-md min-w-[88dvw] rounded-sm mx-auto   top-1 left-20">
           <NavigationMenuList className=" flex py-2">
             <NavigationMenuItem className="pl-1 flex-1 md:pl-10">
               <NavigationMenuLink
