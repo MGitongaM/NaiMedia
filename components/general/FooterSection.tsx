@@ -1,7 +1,7 @@
-// import Image from "next/image";
+
 import { Facebook, X, Instagram, Linkedin, Youtube } from "@thesvg/react";
-// import NaiMediaKenyaLogo from "../../public/images/NaiMediaKenyalogo.webp";
 import CloudinaryImage from "../mediaAssets/CloudinaryImage";
+
 
 export default function FooterSection() {
   return (
@@ -9,14 +9,7 @@ export default function FooterSection() {
       <footer className="bg-slate-900 text-white py-8">
         <div className="container mx-auto px-4">
           <div className="my-40">
-            <div className="flex flex-col md:flex-row justify-between items-center">
-              {/* <Image
-              src={NaiMediaKenyaLogo}
-              alt="Logo"
-              width={400}
-              height={400}
-              className="object-contain w-80 h-80"
-            /> */}
+            <div className="flex flex-col lg:flex-row gap-y-10 justify-between items-center">
               <CloudinaryImage
                 imgSrc={"NaiMediaKenyalogo_2"}
                 height={400}
@@ -24,7 +17,7 @@ export default function FooterSection() {
                 alt={`NaiMedia Kenya logo image`}
                 classNames={"object-contain h-auto w-80"}
               />
-              <div className="flex space-x-4 mt-4 md:mt-0">
+              <div className="flex space-x-4 my-20 lg:mt-0">
                 <a href="/privacy-policy" className="text-white hover:text-gray-400">
                   Privacy Policy
                 </a>
@@ -36,27 +29,27 @@ export default function FooterSection() {
                 </a>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row justify-evenly items-center -mt-20 mb-20">
+            <div className="flex flex-col lg:flex-row justify-evenly items-center lg:-mt-20 mb-20">
               <div className="grid place-content-center ">
                 <p className="text-sm text-center">Connect with us</p>
                 <div className="flex space-x-4 mt-4">
-                  <a href="#" className="text-white hover:text-gray-400">
+                  <a  href="facebook.com" target="_blank"   className="bg-slate-100 rounded-full p-2 hover:scale-95 transition-all transition-discrete ease-linear duration-500">
                     {" "}
                     <Facebook className="h-6 w-6" />
                   </a>
-                  <a href="#" className="text-white hover:text-gray-400">
+                  <a  href="x.com" target="_blank"   className="bg-slate-100 rounded-full p-2 hover:scale-95 transition-all transition-discrete ease-linear duration-500">
                     {" "}
                     <X className="h-6 w-6" />
                   </a>
-                  <a href="#" className="text-white hover:text-gray-400">
+                  <a  href="instagram.com" target="_blank"   className="bg-slate-100 rounded-full p-2 hover:scale-95 transition-all transition-discrete ease-linear duration-500">
                     {" "}
                     <Instagram className="h-6 w-6" />
                   </a>
-                  <a href="#" className="text-white hover:text-gray-400">
+                  <a  href="linkedin" target="_blank"   className="bg-slate-100 rounded-full p-2 hover:scale-95 transition-all transition-discrete ease-linear duration-500">
                     {" "}
                     <Linkedin className="h-6 w-6" />
                   </a>
-                  <a href="#" className="text-white hover:text-gray-400">
+                  <a  href="youtube.com" target="_blank"   className="bg-slate-100 rounded-full p-2 hover:scale-95 transition-all transition-discrete ease-linear duration-500">
                     {" "}
                     <Youtube className="h-6 w-6" />
                   </a>
