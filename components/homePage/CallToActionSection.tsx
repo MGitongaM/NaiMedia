@@ -11,10 +11,10 @@ export default function CallToActionSection() {
               <h3 className="text-2xl font-extrabold mb-4">
                 Ready to Elevate Your Next Event?
               </h3>
-              <p className="leading-7 my-4">
+              <p className="leading-7 text-sm text-balance  my-4">
                 Don&apos;t leave your event&apos;s sound, lighting, and stage
-                execution to chance.
-                <br /> Partner with Nairobi&apos;s premier technical production
+                execution to chance. <br  className=" hidden lg:block"/>
+                 Partner with Nairobi&apos;s premier technical production
                 team today.
               </p>
               <div className="flex justify-center items-center gap-4">

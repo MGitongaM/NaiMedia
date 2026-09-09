@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <>
       {/* <section className="bg-gray-200 h-dvh"> */}
-      <section className="bg-gray-200 bg-[url('https://res.cloudinary.com/hqho8qw7/image/upload/v1788874114/home-hero-bg.jpg')] bg-cover bg-center bg-no-repeat mask-b-from-60% mask-b-to-85% h-dvh ">
+      <section className="bg-gray-200 bg-[url('https://res.cloudinary.com/hqho8qw7/image/upload/v1788874114/home-hero-bg.jpg')] bg-cover bg-center bg-no-repeat  h-dvh ">
         <div className="container mx-auto text-balance px-4 py-20">
           <h1 className="text-6xl text-slate-200 md:text-7xl w-full md:w-10/12 lg:w-6/12 mx-auto text-center font-bold mt-10 mb-4">
             Create Events with Precision and Passion

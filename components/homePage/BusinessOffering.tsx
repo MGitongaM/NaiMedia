@@ -18,7 +18,7 @@ export default function BusinessOffering() {
             {businessOfferingData.map((offering) => (
               <div
                 // className="bg-transparent p-6 rounded-lg group  hover:scale-105 transition-all transition-discrete ease-linear duration-500 hover:shadow-md hover:shadow-gray-400"
-                className="bg-transparent px-6 py-12 rounded-lg group   transition-all transition-discrete ease-linear duration-500 shadow-md lg:hover:shadow-md hover:shadow-gray-400"
+                className="bg-transparent px-6 py-12 rounded-lg group   transition-all transition-discrete ease-linear duration-500 shadow-md lg:hover:shadow-md hover:shadow-fuchsia-200"
                 key={offering.id}
               >
                 <h3 className="text-2xl md:text-4xl font-bold mb-8">

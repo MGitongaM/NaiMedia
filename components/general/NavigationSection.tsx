@@ -35,7 +35,7 @@ export default function NavigationSection() {
   return (
     <>
       <nav className=" fixed z-50">
-        <NavigationMenu className=" bg-slate-100/50 backdrop-blur-md min-w-[88dvw] rounded-sm mx-auto   top-1 left-20">
+        <NavigationMenu className=" bg-slate-100/50 backdrop-blur-md min-w-[88dvw] rounded-sm mx-auto   top-1 left-6 md:left-20">
           <NavigationMenuList className=" flex py-2">
             <NavigationMenuItem className="pl-1 flex-1 md:pl-10">
               <NavigationMenuLink
@@ -84,20 +84,20 @@ export default function NavigationSection() {
                 <SheetTrigger>
                   <MenuSquare size={32} className="text-fuchsia-400" />
                 </SheetTrigger>
-                <SheetContent>
+                <SheetContent side="top">
                   <SheetHeader>
                     <SheetTitle></SheetTitle>
                     <SheetDescription></SheetDescription>
                   </SheetHeader>
                   <div className="c">
-                    <div className="flex flex-col justify-center items-center gap-8">
+                    <div className="flex flex-col justify-center items-center gap-8 list-none">
                       <NavigationMenuItem>
                         {navLinks.map((link) => (
                           <NavigationMenuLink
                             key={link.id}
                             className={cn(
                               navigationMenuTriggerStyle(),
-                              "block my-4",
+                              "block my-4 font-semibold ",
                             )}
                             render={<Link href={link.href}>{link.title}</Link>}
                             href={link.href}

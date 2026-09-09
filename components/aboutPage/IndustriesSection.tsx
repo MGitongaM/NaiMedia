@@ -6,7 +6,7 @@ export default function IndustriesSection() {
     <section className="bg-gray-200 min-h-[80dvh] mask-b-from-90% mask-b-to-gray-200 ">
       <div className="container mx-auto px-4 py-20 ">
         <div className="max-w-4xl text-balance mx-auto mb-12">
-          <h1 className="text-5xl font-bold text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-center">
             Industries We Serve
           </h1>
           <p className="text-lg text-gray-700 text-center mt-4">
@@ -21,7 +21,7 @@ export default function IndustriesSection() {
           {IndustriesServed.map((industry) => (
             <div
               key={industry.id}
-              className="relative  min-h-80 w-full rounded-sm overflow-hidden group transition-all transition-discrete ease-linear duration-500 shadow-md "
+              className="relative  min-h-80 w-full rounded-sm overflow-hidden group transition-all transition-discrete ease-linear duration-500 shadow-md hover:shadow-fuchsia-200 "
             >
               {/* <Image
                 src={industry.imgSrc}
@@ -45,7 +45,8 @@ export default function IndustriesSection() {
                   {industry.name}
                 </h3>
                 <div className="prose prose-invert prose-p:text-white/90 prose-span:text-white max-w-none px-1 pt-6">
-                  <p dangerouslySetInnerHTML={{ __html: industry.details }}></p>
+                  <p className="prose prose-p:font-medium mt-4" dangerouslySetInnerHTML={{ __html: industry.textOne }}></p>
+                  <p dangerouslySetInnerHTML={{ __html: industry.textTwo }}></p>
                 </div>
               </div>
             </div>

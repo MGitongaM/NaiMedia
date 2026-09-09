@@ -3,8 +3,8 @@ export default function LocationSection() {
     <>
       <section className="bg-gray-200 h-[65dvh]">
         <div className="">
-          <div className="text-center pb-10">
-            <h2 className="text-5xl font-bold mb-4">Our Location</h2>
+          <div className="text-center pb-10 px-2">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Location</h2>
             <p className="text-lg text-gray-700">
               We are located at 4th Floor, NextGen Mall, Mombasa Rd, Nairobi,
               Kenya.

@@ -7,7 +7,7 @@ export default function ClientsSection() {
       <section className="bg-slate-100 min-h-dvh ">
         <div className="container mx-auto px-4 py-20">
           <div className="text-center text-balance my-14">
-            <h2 className="text-5xl font-bold text-center my-8">
+            <h2 className="text-4xl md:text-5xl font-bold text-center my-8">
               Brands that Trusted Us
             </h2>
             <p className="text-lg font-semibold">
@@ -18,11 +18,12 @@ export default function ClientsSection() {
               hospitality leaders to deliver world-class event experiences.
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-8"> */}
+          <div className="flex flex-wrap justify-center ">
             {brands.map((brand) => (
               <div
                 key={brand.id}
-                className="group bg-white p-6 rounded-lg shadow-sm hover:shadow-2md transition-all transition-discrete ease-linear duration-500"
+                className="group w-40 md:w-48 lg:w-56 mx-4 my-8 bg-white p-6 rounded-lg   shadow-sm hover:shadow-2md transition-all transition-discrete ease-linear duration-500"
               >
                 <CloudinaryImage
                   imgSrc={brand.imgSrc}

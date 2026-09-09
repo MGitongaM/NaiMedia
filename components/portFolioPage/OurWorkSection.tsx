@@ -39,7 +39,7 @@ export default function OurWorkSection() {
                                           alt={`${work.name} image`}
                                           classNames={"object-cover absolute rounded-sm top-0 h-full w-full z-10"}
                                         />
-                <div className="absolute bottom-0 bg-amber-100 rounded-tr-sm  z-20">
+                <div className="absolute bottom-0 bg-fuchsia-100/50 backdrop-blur-md  rounded-tr-sm  z-20">
                   <div className="relative px-2 py-1 text-slate-900">
                     <h3 className="text-sm font-semibold drop-shadow-md">
                       {work.name}
@@ -50,12 +50,12 @@ export default function OurWorkSection() {
                           <Button className="rounded-sm hover:cursor-pointer" variant={"secondary"}>Learn More</Button>
                         }
                       />
-                      <DrawerContent className="min-h-[75dvh] min-w-7xl mx-auto">
+                      <DrawerContent className="min-h-[75dvh]  lg:min-w-7xl mx-auto">
                         <DrawerHeader>
                           <DrawerTitle></DrawerTitle>
                           <DrawerDescription></DrawerDescription>
                         </DrawerHeader>
-                        <div className="relative min-h-[50dvh] max-w-sm md:max-w-6xl mx-auto">
+                        <div className="relative min-h-[50dvh]  max-w-sm md:max-w-6xl mx-auto">
                           {/* <Image
                             src={work.imgSrc}
                             alt={work.name}
@@ -71,8 +71,8 @@ export default function OurWorkSection() {
                                           classNames={"object-cover h-[50dvh] w-[70dvw] rounded-sm"}
                                         />
                         </div>
-                        <div className="max-w-4xl ml-10 px-4 py-12 ">
-                            <h4 className="text-4xl font-semibold pb-4">{work.name}</h4>
+                        <div className="max-w-4xl lg:ml-10 px-4 py-12 ">
+                            <h4 className="text-2xl md:text-4xl font-semibold pb-4">{work.name}</h4>
                           <p className="leading-8">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Neque, corporis fugit optio est repellendus

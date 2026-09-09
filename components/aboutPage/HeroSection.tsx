@@ -4,7 +4,7 @@ export default function HeroSection() {
       <section className="bg-gray-200 min-h-[80dvh] mask-b-from-90% mask-b-to-gray-200 ">
         <div className="container mx-auto px-4 py-20 ">
           <div className="max-w-4xl text-balance mx-auto mt-20 mb-12">
-            <h1 className="text-6xl md:text-7x font-bold text-center">
+            <h1 className="text-4xl md:text-7xl font-bold text-center">
               Bringing Vision to Life Through Flawless Live Production
             </h1>
             <p className="text-lg text-center my-4 font-semibold">

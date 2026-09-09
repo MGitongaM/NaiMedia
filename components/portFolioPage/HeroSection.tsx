@@ -4,7 +4,7 @@ export default function HeroSection() {
     <section className=" bg-slate-200 min-h-[50dvh] ">
       <div className="container mx-auto px-4 py-20 ">
         <div className="max-w-4xl text-balance mx-auto mt-20 mb-12">
-          <h1 className="text-6xl md:text-7xl font-bold text-center">
+          <h1 className="text-4xl md:text-7xl font-bold text-center">
             Our Work in Action{" "}
           </h1>
           <p className="text-center font-medium my-4">

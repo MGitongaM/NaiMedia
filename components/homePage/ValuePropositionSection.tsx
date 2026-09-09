@@ -3,7 +3,7 @@ export default function ValuePropositionSection() {
     <>
       <section className="bg-gray-400 min-h-[50dvh] ">
         <div className="container mx-auto px-4 py-20">
-          <h2 className="text-5xl font-bold text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-center">
             Why Work With Us
             {/* The NaiMedia Difference */}
           </h2>

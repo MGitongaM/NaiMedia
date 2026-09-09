@@ -12,7 +12,7 @@ export default function CallToActionSection1() {
               <h3 className="text-2xl font-extrabold mb-4">
                 Let&apos;s Build Something Unforgettable Together
               </h3>
-              <p className="leading-7 my-4">
+              <p className="leading-7 text-sm text-balance my-4">
                 Have an upcoming event in Nairobi or across East Africa?<br />
                  Tell us
                 about your technical requirements, date, and venue, <br/>and our team
