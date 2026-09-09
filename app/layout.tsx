@@ -4,6 +4,8 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import FooterSection from "@/components/general/FooterSection";
 import NavigationSection from "@/components/general/NavigationSection";
+import { Toaster } from 'sonner';
+
 
 const figtree = Figtree({subsets:['latin'],variable:'--font-sans'});
 
@@ -31,6 +33,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col overflow-x-hidden">
         <NavigationSection/>
         {children}
+        <Toaster position="top-right"/>
       <FooterSection/>
       </body>
     </html>
