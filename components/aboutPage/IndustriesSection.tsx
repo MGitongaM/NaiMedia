@@ -21,7 +21,7 @@ export default function IndustriesSection() {
           {IndustriesServed.map((industry) => (
             <div
               key={industry.id}
-              className="relative border border-amber-300 min-h-80 w-full rounded-sm overflow-hidden group"
+              className="relative  min-h-80 w-full rounded-sm overflow-hidden group transition-all transition-discrete ease-linear duration-500 shadow-md "
             >
               {/* <Image
                 src={industry.imgSrc}
@@ -35,11 +35,13 @@ export default function IndustriesSection() {
                 height={400}
                 width={400}
                 alt={`${industry.name} image`}
-                classNames={"object-cover h-80 w-full -z-20"}
+                classNames={
+                  "object-cover h-80 w-full -z-20 group-hover:scale-105 transition-all transition-discrete ease-linear duration-500 shadow-md "
+                }
               />
-              <div className="absolute inset-0 bg-black/85 group-hover:bg-black/60 transition-colors -z-5" />
+              <div className="absolute inset-0 bg-black/85  transition-colors -z-5" />
               <div className="relative p-6 text-white">
-                <h3 className="text-lg font-semibold drop-shadow-md">
+                <h3 className="text-lg font-semibold drop-shadow-md -mt-20 bg-emerald-200 text-slate-800 w-64 px-2 py-1 rounded-sm">
                   {industry.name}
                 </h3>
                 <div className="prose prose-invert prose-p:text-white/90 prose-span:text-white max-w-none px-1 pt-6">

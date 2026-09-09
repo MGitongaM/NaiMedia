@@ -11,13 +11,13 @@ export default function errorPage() {
             imgSrc={"error"}
             height={400}
             width={400}
-            alt={`404 image`}
-            classNames={"object-cover h-80 w-full "}
+            alt={`error image`}
+            classNames={"object-cover h-full w-40 mx-auto "}
           />
-          <h2 className="text-lg text-center bg-red-50 px-2 py-1 rounded font-semibold mt-8">
+          <p className="text-sm text-center bg-red-50 px-2 py-1 rounded font-semibold mt-8">
             Ooops Looks Like we have an error, please fresh the page or try
             again later
-          </h2>
+          </p>
         </div>
       </section>
     </>

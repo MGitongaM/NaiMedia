@@ -14,7 +14,7 @@ export default function NotFoundPage() {
             alt={`404 image`}
             classNames={"object-cover h-80 w-full "}
           />
-          <h2 className="text-lg text-center bg-red-50 px-2 py-1 rounded font-semibold mt-8">Ooops Page Not Found</h2>
+          <p className="text-lg text-center bg-red-50 px-2 py-1 rounded font-semibold mt-8">Ooops Page Not Found</p>
         </div>
       </section>
     </>

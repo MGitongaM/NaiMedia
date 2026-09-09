@@ -35,7 +35,7 @@ export default function StoryAndApproachSection() {
             </div>
             <div className="shadow-md px-2 md:px-12 py-8 space-y-4">
               <h2 className="text-4xl font-bold">Our Approach</h2>
-              <div className="rounded-sm px-3 py-8 bg-amber-100">
+              <div className="rounded-sm px-3 py-8 bg-emerald-50">
                 <p className="text-lg  font-extrabold">1. Consult & Design</p>
                 <p className="leading-7 py-4">
                   Every successful show starts on paper. We analyze your venue,
@@ -44,7 +44,7 @@ export default function StoryAndApproachSection() {
                   within your footprint.
                 </p>
               </div>
-              <div className="rounded-sm px-3 py-8 bg-amber-100">
+              <div className="rounded-sm px-3 py-8 bg-emerald-100">
                 <p className="text-lg  font-extrabold">2. Prepare & Test</p>
                 <p className="leading-7 py-4">
                   We don&apos;t leave performance to chance. Every line array,
@@ -53,7 +53,7 @@ export default function StoryAndApproachSection() {
                   before heading to your site.
                 </p>
               </div>
-              <div className="rounded-sm px-3 py-8 bg-amber-100">
+              <div className="rounded-sm px-3 py-8 bg-emerald-200">
                 <p className="text-lg  font-extrabold">3. Execute & Support</p>
                 <p className="leading-7 py-4">
                   On event day, our team handles logistics, setup, show calling,
