@@ -1,16 +1,17 @@
 export default function HeroSection() {
   return (
     <>
-      <section className="bg-gray-200 min-h-[80dvh] mask-b-from-90% mask-b-to-gray-200 ">
-        <div className="container mx-auto px-4 py-20 ">
-          <div className="max-w-4xl text-balance mx-auto mt-20 mb-12">
+      <section className="bg-gray-200 bg-[url('https://res.cloudinary.com/hqho8qw7/image/upload/v1788944302/abstract-1.jpg')] bg-cover bg-center bg-no-repeat relative min-h-[80dvh] z-10 ">
+      <div className="min-h-[80dvh] w-full absolute top-0 bg-black/60"></div>
+        <div className="container  mx-auto px-4 py-20 relative z-20 ">
+          <div className="max-w-4xl text-balance text-slate-100 mx-auto mt-20 mb-12">
             <h1 className="text-4xl md:text-7xl font-bold text-center">
               Bringing Vision to Life Through Flawless Live Production
             </h1>
             <p className="text-lg text-center my-4 font-semibold">
               At our core, we believe great technology should feel invisible.
             </p>
-            <p className="text-lg text-gray-700 text-center mt-4">
+            <p className="text-lg text-center mt-4">
               Behind every unforgettable conference, high energy concert, or
               landmark corporate launch is a precise network of sound, light,
               and design working in complete harmony. We are a full service
