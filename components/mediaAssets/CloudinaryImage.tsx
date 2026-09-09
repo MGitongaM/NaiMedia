@@ -2,7 +2,7 @@
 
 import { CldImage } from "next-cloudinary";
 
-interface CloudinaryProps {
+interface CloudinaryImageProps {
   imgSrc: string;
   width: number;
   height: number;
@@ -16,7 +16,7 @@ export default function CloudinaryImage({
   height,
   alt,
   classNames
-}: CloudinaryProps) {
+}: CloudinaryImageProps) {
   return (
     <>
       <CldImage src={imgSrc} width={width} height={height} alt={alt}  className={classNames}/>
