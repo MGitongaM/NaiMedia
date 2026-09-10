@@ -14,7 +14,7 @@ import { Input } from "@/components/ui/input";
 
 import { Textarea } from "@/components/ui/textarea";
 import {toast} from "sonner";
-import { CheckCircle2Icon } from "lucide-react";
+import { CheckCircle2Icon, X } from "lucide-react";
 
 const ContactFormSchema=z.object({
     firstName:z.string().min(2,"First Name has too few characters"),
@@ -37,21 +37,32 @@ export default function ContactForm() {
         }
     })
 
-    function onSubmit(data:z.infer<typeof ContactFormSchema>){
-        toast(<>
-            <div className="flex items-center gap-2">
-            <CheckCircle2Icon className="text-lime-500"/>
-            <p className="text-sm">Message has been set</p>
-            </div>
-            <div className="hidden">
-                <pre>
-                    <code>{JSON.stringify(data, null, 2)}</code>
-                </pre>
-             </div>    
-        </>,{duration:4000}
-    )
+    async function onSubmit(data:z.infer<typeof ContactFormSchema>){
+        try {
+            const res=await fetch(`/api/send`,{method:"POST",headers:{"Content-Type": "application/json" },body:JSON.stringify(data)})
+            const result=await res.json()
+            if(result.ok){}
+            toast(<>
+                <div className="flex items-center gap-2">
+                <CheckCircle2Icon className="text-lime-500"/>
+                <p className="text-sm">Message has been set</p>
+                </div>
+                <div className="hidden">
+                    <pre>
+                        <code>{JSON.stringify(data, null, 2)}</code>
+                    </pre>
+                 </div>    
+            </>,{duration:4000}
+        )
+            form.reset()
+        } catch (err:unknown) {
+            toast(<><div className="flex items-center gap-2">
+                    <X className="text-red-500 bg-red-200 rounded-full p-1"/>
+                    <p className="text-sm">Error sending message, please try again later <span className="hidden">{err instanceof Error ? err.message : String(err)}</span></p>
+                </div></>)
+        }
+    
    
-        form.reset()
     }
   return (
     <>
@@ -135,7 +146,9 @@ export default function ContactForm() {
             </div>
 
           <Field orientation="horizontal">
-            <Button size="lg" type="submit" className="rounded-sm cursor-pointer bg-lime-700 ">Submit</Button>
+            <Button disabled={form.formState.isSubmitting} size="lg" type="submit" className="rounded-sm cursor-pointer text-base bg-lime-700 px-4 py-6 ">
+                {form.formState.isSubmitting ?"Submitting":"Submit"}
+                </Button>
           </Field>
         </FieldGroup>
       </form>
