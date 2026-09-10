@@ -23,7 +23,7 @@ export default function ClientsSection() {
             {brands.map((brand) => (
               <div
                 key={brand.id}
-                className="group w-40 md:w-48 lg:w-56 mx-1 md:mx-4 my-8 bg-white p-6 rounded-lg   shadow-sm hover:shadow-2md transition-all transition-discrete ease-linear duration-500"
+                className="group w-40 md:w-48 2xl:w-56 mx-1 md:mx-4 my-8 bg-white p-6 rounded-lg   shadow-sm hover:shadow-2md transition-all transition-discrete ease-linear duration-500"
               >
                 <CloudinaryImage
                   imgSrc={brand.imgSrc}
