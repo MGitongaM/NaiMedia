@@ -17,7 +17,7 @@ export default function FooterSection() {
                 alt={`NaiMedia Kenya logo image`}
                 classNames={"object-contain h-auto w-80"}
               />
-              <div className="flex space-x-4 my-20 lg:mt-0">
+              <div className="flex space-x-4 my-20 mlg:mt-0">
                 <a href="/privacy-policy" className="text-white hover:text-gray-400">
                   Privacy Policy
                 </a>
@@ -29,7 +29,7 @@ export default function FooterSection() {
                 </a>
               </div>
             </div>
-            <div className="flex flex-col lg:flex-row justify-evenly items-center lg:-mt-20 mb-20">
+            <div className="flex flex-col lg:flex-row justify-evenly items-center lg:-mt-32 mb-20">
               <div className="grid place-content-center ">
                 <p className="text-sm text-center">Connect with us</p>
                 <div className="flex space-x-4 mt-4">

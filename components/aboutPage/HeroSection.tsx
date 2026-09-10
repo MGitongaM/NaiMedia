@@ -1,8 +1,8 @@
 export default function HeroSection() {
   return (
     <>
-      <section className="bg-gray-200 bg-[url('https://res.cloudinary.com/hqho8qw7/image/upload/v1789022457/about_page_bg_image.jpg')] bg-cover bg-center bg-no-repeat relative min-h-[85dvh] z-10 ">
-      <div className="min-h-[85dvh] w-full absolute top-0 bg-black/80"></div>
+      <section className="bg-gray-200 bg-[url('https://res.cloudinary.com/hqho8qw7/image/upload/v1789027379/about_us_hero_bg.jpg')] bg-cover bg-center bg-no-repeat relative min-h-[85dvh] z-10 ">
+      <div className="min-h-[85dvh] w-full absolute top-0 bg-black/60"></div>
         <div className="container  mx-auto px-4 py-20 relative z-20 ">
           <div className="max-w-6xl text-balance text-slate-100 mx-auto mt-20 mb-12">
             <h1 className="text-4xl md:text-7xl font-bold text-center">
