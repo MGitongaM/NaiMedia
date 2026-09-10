@@ -7,16 +7,16 @@ export default function StoryAndApproachSection() {
         <div className="container mx-auto px-4 py-20 ">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="c shadow-md px-2 md:px-12 py-8">
-                <div className="my-4">
+                <div className="mb-4">
                 <h2 className="text-4xl font-bold">Our Story</h2>
-                <p className="font-semibold mt-4">
+                <p className="font-semibold mt-6">
                     Built on Precision, Passion, and Performance
                 </p>
 
                 </div>
               <p className="leading-7">
-                What started as a passion for cutting-edge sound and stage
-                technology has grown into a trusted, full-service production
+                What started as a passion for cutting edge sound and stage
+                technology has grown into a trusted, full service production
                 partner for event organizers, brands, and venue managers
                 nationwide.
               </p>

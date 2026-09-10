@@ -75,7 +75,7 @@ export default function ContactForm() {
                     render={({field, fieldState})=>(
                         <Field data-invalid={fieldState.invalid}>
                             <FieldLabel htmlFor="lastName">Last Name</FieldLabel>
-                            <Input {...field} id="lastName" aria-invalid={fieldState.invalid} placeholder="Musa"  className="rounded-sm" autoComplete="off"/>
+                            <Input {...field} id="lastName" aria-invalid={fieldState.invalid} placeholder="Jones"  className="rounded-sm" autoComplete="off"/>
                             {fieldState.invalid && (<FieldError errors={[fieldState.error]}/>)}
                         </Field>
                     )}
@@ -135,7 +135,7 @@ export default function ContactForm() {
             </div>
 
           <Field orientation="horizontal">
-            <Button type="submit">Submit</Button>
+            <Button size="lg" type="submit" className="rounded-sm cursor-pointer bg-lime-700 ">Submit</Button>
           </Field>
         </FieldGroup>
       </form>

@@ -4,7 +4,7 @@ import OurWorkSection from "@/components/portFolioPage/OurWorkSection";
 import { Metadata } from "next";
 import { getCldOgImageUrl } from "next-cloudinary";
 
-const url= getCldOgImageUrl({src:"portfolio_OpenGraph"})
+const url= getCldOgImageUrl({src:"Portfolio_OG_image"})
 
 export const metadata: Metadata = {
   title: "Our Portfolio | NaiMedia Studio and Events",

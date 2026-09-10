@@ -5,7 +5,7 @@ import WhyUsSection from "@/components/servicePage/WhyUsSection";
 import { Metadata } from "next";
 import { getCldOgImageUrl } from "next-cloudinary";
 
-const url= getCldOgImageUrl({src:"services_OpenGraph"})
+const url= getCldOgImageUrl({src:"Service_OG_image"})
 
 export const metadata: Metadata = {
   title: "Our Services | NaiMedia Studio and Events",

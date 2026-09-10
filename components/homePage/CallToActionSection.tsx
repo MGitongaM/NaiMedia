@@ -17,14 +17,14 @@ export default function CallToActionSection() {
                  Partner with Nairobi&apos;s premier technical production
                 team today.
               </p>
-              <div className="flex justify-center items-center gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2  justify-center items-center gap-4">
                 <Link href="/contact-us">
-                    <Button variant="outline" className="rounded-sm">
+                    <Button variant="outline" className="bg-slate-400 border-none rounded-sm cursor-pointer">
                     Speak to a Production Specialist
                     </Button>
                 </Link>
                 <Link href="/our-portfolio">
-                <Button variant="secondary" className="rounded-sm">
+                <Button variant="secondary" className=" bg-slate-300 rounded-sm cursor-pointer">
                   View Our Portfolio
                 </Button>
                 </Link>

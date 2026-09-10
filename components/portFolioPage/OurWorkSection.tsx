@@ -25,20 +25,15 @@ export default function OurWorkSection() {
                 key={work.id}
                 className=" relative border min-h-72  rounded-sm"
               >
-                {/* <Image
-                  src={work.imgSrc}
-                  alt={work.name}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover absolute rounded-sm top-0 z-10"
-                /> */}
-                 <CloudinaryImage
-                                          imgSrc={work.imgSrc}
-                                          height={400}
-                                          width={400}
-                                          alt={`${work.name} image`}
-                                          classNames={"object-cover absolute rounded-sm top-0 h-full w-full z-10"}
-                                        />
+                <CloudinaryImage
+                  imgSrc={work.imgSrc}
+                  height={400}
+                  width={400}
+                  alt={`${work.name} image`}
+                  classNames={
+                    "object-cover absolute rounded-sm top-0 h-full w-full z-10"
+                  }
+                />
                 <div className="absolute bottom-0 bg-fuchsia-100/50 backdrop-blur-md  rounded-tr-sm  z-20">
                   <div className="relative px-2 py-1 text-slate-900">
                     <h3 className="text-sm font-semibold drop-shadow-md">
@@ -47,7 +42,12 @@ export default function OurWorkSection() {
                     <Drawer swipeDirection="right" showSwipeHandle>
                       <DrawerTrigger
                         render={
-                          <Button className="rounded-sm hover:cursor-pointer" variant={"secondary"}>Learn More</Button>
+                          <Button
+                            className="rounded-sm hover:cursor-pointer"
+                            variant={"secondary"}
+                          >
+                            Learn More
+                          </Button>
                         }
                       />
                       <DrawerContent className="min-h-[75dvh]  lg:min-w-7xl mx-auto">
@@ -56,44 +56,36 @@ export default function OurWorkSection() {
                           <DrawerDescription></DrawerDescription>
                         </DrawerHeader>
                         <div className="relative min-h-[50dvh]  max-w-sm md:max-w-6xl mx-auto">
-                          {/* <Image
-                            src={work.imgSrc}
-                            alt={work.name}
-                            fill
-                              sizes="(max-width: 768px) 100vw, 33vw"
-                            className="object-cover size-auto rounded-sm"
-                          /> */}
-                            <CloudinaryImage
-                                          imgSrc={work.imgSrc}
-                                          height={400}
-                                          width={400}
-                                          alt={`${work.name} image`}
-                                          classNames={"object-cover h-[50dvh] w-[70dvw] rounded-sm"}
-                                        />
+                          <CloudinaryImage
+                            imgSrc={work.imgSrc}
+                            height={400}
+                            width={400}
+                            alt={`${work.name} image`}
+                            classNames={
+                              "object-cover h-[50dvh] w-[70dvw] rounded-sm"
+                            }
+                          />
                         </div>
-                        <div className="max-w-4xl lg:ml-10 px-4 py-12 ">
-                            <h4 className="text-2xl md:text-4xl font-semibold pb-4">{work.name}</h4>
-                          <p className="leading-8">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Neque, corporis fugit optio est repellendus
-                            sunt repudiandae modi ea nostrum mollitia maxime
-                            non, beatae similique ullam qui eveniet sed numquam
-                            labore quo omnis? Voluptas fuga magnam doloremque
-                            quam soluta eius tenetur, vero perferendis
-                            architecto veniam nostrum porro laudantium, dolorem
-                            eos harum deleniti est quis inventore neque
-                            provident? Dolores quaerat repellat tenetur
-                            consequatur labore autem impedit voluptatum at
-                            itaque officiis perferendis ex sint voluptate quos
-                            neque minima reprehenderit, ducimus doloribus sed
-                            exercitationem porro facilis quasi blanditiis?
-                            Alias, voluptatum. Recusandae fugit delectus rerum
-                            vero, quia, atque explicabo officiis nobis
-                            architecto vel, asperiores magnam.
-                          </p>
+                        <div className="max-w-7xl lg:ml-10 px-4 py-12 ">
+                          <h4 className="text-2xl md:text-4xl font-semibold pb-4">
+                            {work.name}
+                          </h4>
+                          <ul className="leading-8 list-disc">
+                            <li className="ml-2">{work.textOne}</li>
+                            <li className="ml-2">{work.textTwo}</li>
+                            <li className="ml-2">{work.textThree}</li>
+                            <li className="ml-2">{work.textFour}</li>
+                            <li className="ml-2">{work.textFive}</li>
+                          </ul>
                         </div>
                         <DrawerFooter className="grid place-content-center">
-                          <DrawerClose render={<Button className="w-30 mx-ato">Close</Button>} />
+                          <DrawerClose
+                            render={
+                              <Button className="w-30 mx-ato cursor-pointer rounded-sm">
+                                Close
+                              </Button>
+                            }
+                          />
                         </DrawerFooter>
                       </DrawerContent>
                     </Drawer>

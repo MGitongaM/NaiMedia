@@ -5,7 +5,7 @@ export const servicesOfferingData = [
     imageSrc: "Full_Production_Event_Packages",
     description:
       `<span className="font-bold">Complete turnkey event production</span>: from initial site survey to
-      post-event strike. We manage the technical scope of your event so you can focus on your audience. 
+      post event strike. We manage the technical scope of your event so you can focus on your audience. 
       Our production managers handle gear logistics, vendor coordination, crew management, 
       and show execution.`,
   },
@@ -14,7 +14,7 @@ export const servicesOfferingData = [
     title: "Audio Engineering & Systems",
     imageSrc: "Audio_Engineering_Systems",
     description:
-      `<span className="font-bold">Immersive, crystal-clear sound designed for optimal acoustic coverage</span>: 
+      `<span className="font-bold">Immersive, crystal clear sound designed for optimal acoustic coverage</span>: 
       From intimate boardrooms to multithousand seat arenas, our audio solutions deliver pristine speech 
       intelligibility and rich, dynamic music reproduction. We utilize precision line arrays, 
       digital mixing consoles, wireless microphone systems, and advanced feedback management.
@@ -37,7 +37,7 @@ export const servicesOfferingData = [
     description:
       `<span className="font-bold">Atmospheric and functional lighting tailored to evoke emotion and highlight key moments</span>:
       Transform your venue with customized lighting plots. Our lighting designers combine functional stage washes with dynamic, 
-      computer-controlled intelligent fixtures, uplighting, custom gobos, and architectural highlights to reflect your brand or theme.`,
+      computer controlled intelligent fixtures, uplighting, custom gobos, and architectural highlights to reflect your brand or theme.`,
   },
   {
     id: 5,
@@ -46,7 +46,7 @@ export const servicesOfferingData = [
     description:
       `<span className="font-bold">Engineered, safe, and versatile staging tailored to any venue footprint</span>: 
       We provide sturdy, customizable stage platforms, indoor/outdoor modular staging, custom risers, ramps, 
-      and ADA-compliant accessibility options. Built for safety and aesthetics, our staging setups support heavy 
+      and ADA compliant accessibility options. Built for safety and aesthetics, our staging setups support heavy 
       load-bearing capacities and can be finished with custom skirters, wraps, or carpets.`,
   },
   {
@@ -55,7 +55,7 @@ export const servicesOfferingData = [
     imageSrc: "Certified_Rigging_Truss_Services",
     description:
       `<span className="font-bold">Structural rigging solutions built to rigorous technical and safety standards</span>:
-      Safety is paramount in live production. Our ETCP-certified riggers design overhead truss configurations and
+      Safety is paramount in live production. Our ETCP certified riggers design overhead truss configurations and
         hanging points that comply with all local safety regulations, building weight limits, and engineering standards.`,
   },
   {
@@ -74,9 +74,9 @@ export const servicesOfferingData = [
     imageSrc: "Custom_Graphics_Event_Signage",
     description:
       `<span className="font-bold">Branded visual assets that complete the event space</span>:
-      Enhance brand visibility with custom-printed graphic collateral. From stage backdrops 
-      and step-and-repeat banners to directional signage and digital display graphics, 
-      we provide high-quality print and digital branding integration`,
+      Enhance brand visibility with custom printed graphic collateral. From stage backdrops 
+      and step and repeat banners to directional signage and digital display graphics, 
+      we provide high quality print and digital branding integration`,
   },
   {
     id: 9,
@@ -84,8 +84,8 @@ export const servicesOfferingData = [
     imageSrc: "AV_technology",
     description:
       `<span className="font-bold">Access a vast inventory of industry leading AV technology.</span>:
-       Need to supplement an existing setup or purchase permanent gear? We offer flexible short-term
-        equipment rentals, long-term leasing, and authorized sales of top-tier AV brands. 
+       Need to supplement an existing setup or purchase permanent gear? We offer flexible short term
+        equipment rentals, long term leasing, and authorized sales of top tier AV brands. 
         All rental inventory undergoes routine maintenance and quality checks prior to release.`,
   },
 ]

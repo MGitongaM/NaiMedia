@@ -20,7 +20,7 @@ export default function CallToActionSection1() {
               </p>
               <div className="flex justify-center items-center gap-4">
                 <Link href="/contact-us">
-                  <Button variant="outline" className="rounded-sm">
+                  <Button variant="outline" className="rounded-sm cursor-pointer">
                     Request Your Quote Now
                   </Button>
                 </Link>

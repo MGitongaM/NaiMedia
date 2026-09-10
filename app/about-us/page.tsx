@@ -5,7 +5,7 @@ import CallToActionSection1 from "@/components/homePage/CallToActionSection1";
 import { Metadata } from "next";
 import { getCldOgImageUrl } from "next-cloudinary";
 
-const url= getCldOgImageUrl({src:"about_OpenGraph"})
+const url= getCldOgImageUrl({src:"About_OG_image"})
 
 export const metadata: Metadata = {
   title: "About | NaiMedia Studio and Events",
