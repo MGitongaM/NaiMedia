@@ -42,20 +42,13 @@ export default function NavigationSection() {
                 href="/"
                 className="bg-transparent hover:bg-transparent"
               >
-                {/* <Image
-                src={NaiMediaLogo}
-                alt="Logo"
-                width={400}
-                height={400}
-                className="object-contain h-auto w-40 "
-              /> */}
                 <CloudinaryImage
                   imgSrc={'NaiMediaKenyalogo_2'}
                   height={400}
                   width={400}
                   alt={`NaiMedia Kenya logo image`}
                   classNames={
-                    "object-contain h-auto w-40"
+                    "object-contain h-auto w-40 bg-slate-900 p-2 rounded-sm"
                   }
                 />
               </NavigationMenuLink>
