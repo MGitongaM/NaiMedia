@@ -22,6 +22,7 @@ import {
 import { MenuSquare } from "lucide-react";
 import { useState } from "react";
 import CloudinaryImage from "../mediaAssets/CloudinaryImage";
+import { Button } from "../ui/button";
 
 const navLinks = [
   { id: 1, title: "Home", href: "/" },
@@ -35,34 +36,33 @@ export default function NavigationSection() {
   return (
     <>
       <nav className=" fixed z-50">
-        <NavigationMenu className=" bg-slate-100/50 backdrop-blur-md min-w-[88dvw] rounded-sm mx-auto   top-1 left-6 md:left-20">
+        {/* <NavigationMenu className=" bg-slate-900/80 backdrop-blur-md min-w-[88dvw] rounded-sm mx-auto   top-1 left-6 md:left-20"> */}
+        <NavigationMenu className=" bg-slate-900/80 backdrop-blur-md min-w-[84dvw] lg:min-w-[88dvw] rounded-sm mx-auto   top-1 left-6 md:left-20">
           <NavigationMenuList className=" flex py-2">
-            <NavigationMenuItem className="pl-1 flex-1 md:pl-10">
+            <NavigationMenuItem className="pl-1 flex-1 lg:pl-10">
               <NavigationMenuLink
                 href="/"
                 className="bg-transparent hover:bg-transparent"
               >
                 <CloudinaryImage
-                  imgSrc={'NaiMediaKenyalogo_2'}
+                  imgSrc={"NaiMediaKenyalogo_2"}
                   height={400}
                   width={400}
                   alt={`NaiMedia Kenya logo image`}
-                  classNames={
-                    "object-contain h-auto w-40 bg-slate-900 p-2 rounded-sm"
-                  }
+                  classNames={"object-contain h-auto w-40  p-2 rounded-sm"}
                 />
               </NavigationMenuLink>
             </NavigationMenuItem>
             {/* desktop navigation */}
             <div className="hidden lg:block flex-1 bg-amber-2000">
-              <div className="grid place-content-center mr-0 lg:mr-40">
+              <div className="grid place-content-center mr-0 lg:mr-">
                 <NavigationMenuItem>
                   {navLinks.map((link) => (
                     <NavigationMenuLink
                       key={link.id}
                       className={cn(
                         navigationMenuTriggerStyle(),
-                        "font-bold hover:bg-fuchsia-200",
+                        "text-slate-100 rounded-sm focus:text-slate-950 font-bold hover:text-slate-950 hover:bg-fuchsia-200",
                       )}
                       render={<Link href={link.href}>{link.title}</Link>}
                       href={link.href}
@@ -71,13 +71,31 @@ export default function NavigationSection() {
                 </NavigationMenuItem>
               </div>
             </div>
+            {/* <div className="bg-red-500"> */}
+            <NavigationMenuItem className="mr-10 justify-end md:pl-0 hidden lg:block">
+              <NavigationMenuLink
+                href="/contact-us"
+                className=" inline-block cursor-pointer rounded-md font-bold bg-fuchsia-200 text-slate-900 hover:text-slate-900 hover:shadow-lg hover:bg-fuchsia-300"
+                render={
+                  <Button className="  hover:scale-110 transition-all transition-discrete ease-linear duration-500 shadow-md">
+                      <Link href="/contact-us">
+                      Get AV Quote
+                  </Link>
+                    </Button>
+                }
+              />
+            </NavigationMenuItem>
+            {/* </div> */}
             {/* mobile navigation */}
             <div className="block  lg:hidden">
               <Sheet open={open} onOpenChange={setOpen}>
                 <SheetTrigger>
-                  <MenuSquare size={32} className="text-fuchsia-400" />
+                  <MenuSquare size={32} className="text-fuchsia-400 mr-2" />
                 </SheetTrigger>
-                <SheetContent side="top">
+                <SheetContent
+                  side="top"
+                  className="max-w-sm md:max-w-xl mx-auto rounded-b-md bg-slate-900/80 backdrop-blur-md border-none border-transparent"
+                >
                   <SheetHeader>
                     <SheetTitle></SheetTitle>
                     <SheetDescription></SheetDescription>
@@ -90,7 +108,7 @@ export default function NavigationSection() {
                             key={link.id}
                             className={cn(
                               navigationMenuTriggerStyle(),
-                              "block my-4 font-semibold ",
+                              "block my-4 font-semibold  text-slate-100",
                             )}
                             render={<Link href={link.href}>{link.title}</Link>}
                             href={link.href}

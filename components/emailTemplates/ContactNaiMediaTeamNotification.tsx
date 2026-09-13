@@ -37,7 +37,7 @@ export default function ContactNaiMediaTeamNotification({
           <Preview>
             Contact Message From Website
           </Preview>
-          <Container className="mx-auto py-5 pb-12">
+          <Container className=" bg-[#a67bea] rounded-lg border border-solid border-[#a67bea] mx-auto px-4 py-5 pb-12">
             <Img
               src={`https://res.cloudinary.com/hqho8qw7/image/upload/v1789045398/naimedia_email_logo.png`}
               width="170"
@@ -51,7 +51,14 @@ export default function ContactNaiMediaTeamNotification({
               There is a new submission from the contact page. 
             </Text>
             <Hr className="border-[#cccccc] my-5" />
-            <Section className="text-center">
+            <Section
+              className="bg-[#f3f4f6] rounded-lg border border-solid border-[#e5e7eb] px-6 py-4 text-center"
+              style={{
+                backgroundColor: "#f3f4f6",
+                borderRadius: "8px",
+                border: "1px solid #e5e7eb",
+              }}
+            >
               <Text className="text-[16px] leading-6.5">
                 Name: {firstName} {lastName}
               </Text>

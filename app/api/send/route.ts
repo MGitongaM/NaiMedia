@@ -10,7 +10,7 @@ export async function POST(request:Request) {
     const {firstName,lastName,emailAddress,phoneNumber,subject,message}=await request.json()
     const { data, error } = await resend.emails.send({
       from: 'Acme <onboarding@resend.dev>',
-      to: ['gitoshmbae@gmail.com','delivered@resend.dev',],
+      to: ['gitoshmbae@gmail.com','delivered@resend.dev', ],
       subject: 'New Contact From NaiMediaKenya.com',
       react: ContactNaiMediaTeamNotification({firstName,lastName,emailAddress,phoneNumber,subject,message}),
     });
