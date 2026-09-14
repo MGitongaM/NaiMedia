@@ -22,7 +22,7 @@ export default function HeroSection() {
               <br />
               <p className="text-lg text-gray-700 mb-8 flex items-center">
                 <span className="inline-block  text-fuchsia-800 mr-2"><Phone size={40}/></span>
-                Phone:<span className="font-bold ml-2"> +254 123 456 789</span>
+                Phone:<span className="font-bold ml-2"> 07838 883 389</span>
               </p>
               <br />
               <p className="text-lg text-gray-700 mb-8 flex items-center">

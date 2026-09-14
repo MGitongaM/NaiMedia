@@ -6,7 +6,7 @@ export default function LocationSection() {
           <div className="text-center pb-10 px-2">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Location</h2>
             <p className="text-lg text-gray-700">
-              We are located at 4th Floor, NextGen Mall, Mombasa Rd, Nairobi,
+              We are located at 33 Chambers Rd, Nairobi,
               Kenya.
             </p>
           </div>
