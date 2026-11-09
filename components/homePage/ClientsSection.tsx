@@ -34,7 +34,7 @@ export default function ClientsSection() {
                     "object-contain h-40 w-80 mx-auto rounded-sm group-hover:scale-95 transition-all transition-discrete ease-linear duration-500"
                   }
                 />
-                <h3 className="text-sm text-center text-slate-300 group-hover:text-slate-600 font-medium mb-4">
+                <h3 className="text-xs text-center text-slate-700 group-hover:text-slate-700 font-medium mt-2 mb-4">
                   {brand.name}
                 </h3>
               </div>

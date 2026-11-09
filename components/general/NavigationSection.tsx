@@ -22,7 +22,6 @@ import {
 import { MenuSquare } from "lucide-react";
 import { useState } from "react";
 import CloudinaryImage from "../mediaAssets/CloudinaryImage";
-import { Button } from "../ui/button";
 
 const navLinks = [
   { id: 1, title: "Home", href: "/" },
@@ -51,58 +50,48 @@ export default function NavigationSection() {
               </Link>
             </NavigationMenuItem>
             {/* desktop navigation */}
-            <div className="hidden lg:block flex-1 bg-amber-2000">
-              {/* <div className="grid place-content-center mr-0 lg:mr-"> */}
-              <div className="flex gap-x-2 mr-0 lg:mr-">
-                {navLinks.map((link) => (
-                  <NavigationMenuItem key={link.id} >
-                    <NavigationMenuLink
-                      className={cn(
-                        navigationMenuTriggerStyle(),
-                        "text-slate-100 rounded-sm focus:text-slate-950 font-bold hover:text-slate-950 hover:bg-fuchsia-200",
-                      )}
-                      render={<Link href={link.href}>{link.title}</Link>}
-                      href={link.href}
-                    />
-                  </NavigationMenuItem>
-                ))}
-              </div>
-            </div>
+            {navLinks.map((link) => (
+              <NavigationMenuItem key={link.id} className="hidden lg:block">
+                <NavigationMenuLink
+                  className={cn(
+                    navigationMenuTriggerStyle(),
+                    "h-11 text-slate-100 rounded-sm focus:text-slate-950 font-bold ml-2 hover:text-slate-950 hover:bg-fuchsia-200",
+                  )}
+                  render={<Link href={link.href}>{link.title}</Link>}
+                  href={link.href}
+                />
+              </NavigationMenuItem>
+            ))}
             {/* <div className="bg-red-500"> */}
-            <NavigationMenuItem className="mr-10 justify-end md:pl-0 hidden lg:block">
+            <NavigationMenuItem className="mr-10 justify-end md:pl-0 hidden lg:block ml-4">
               <NavigationMenuLink
-                href="/contact-us"
-                className=" inline-block cursor-pointer rounded-md font-bold bg-fuchsia-200 text-slate-900 hover:text-slate-900 hover:shadow-lg hover:bg-fuchsia-300"
-                render={
-                  <Button className="  hover:scale-110 transition-all transition-discrete ease-linear duration-500 shadow-md">
-                    <Link href="/contact-us">Get AV Quote</Link>
-                  </Button>
-                }
+                className="h-11 min-w-11 inline-flex cursor-pointer rounded-md px-4 font-bold bg-fuchsia-200 text-slate-900 hover:text-slate-900 hover:shadow-lg hover:bg-fuchsia-300"
+                render={<Link href="/contact-us">Get AV Quote</Link>}
               />
             </NavigationMenuItem>
             {/* </div> */}
             {/* mobile navigation */}
-            <div className="block  lg:hidden">
+            <NavigationMenuItem className="block lg:hidden">
               <Sheet open={open} onOpenChange={setOpen}>
-                <SheetTrigger>
-                  <MenuSquare size={32} className="text-fuchsia-400 mr-2" />
+                <SheetTrigger aria-label="Open navigation menu" className="inline-flex min-h-11 min-w-11 items-center justify-center">
+                  <MenuSquare size={32} className="text-fuchsia-400 mr-2" aria-hidden="true" />
                 </SheetTrigger>
                 <SheetContent
                   side="top"
                   className="max-w-sm md:max-w-xl mx-auto rounded-b-md bg-slate-900/80 backdrop-blur-md border-none border-transparent"
                 >
                   <SheetHeader>
-                    <SheetTitle></SheetTitle>
-                    <SheetDescription></SheetDescription>
+                    <SheetTitle className="sr-only">Main navigation</SheetTitle>
+                    <SheetDescription className="sr-only">Choose a page to visit.</SheetDescription>
                   </SheetHeader>
                   <div className="c">
-                    <div className="flex flex-col justify-center items-center  list-none">
+                    <NavigationMenuList className="flex flex-col justify-center items-center list-none">
                       {navLinks.map((link) => (
                         <NavigationMenuItem key={link.id}>
                           <NavigationMenuLink
                             className={cn(
                               navigationMenuTriggerStyle(),
-                              "block my-4 font-semibold  text-slate-100",
+                              "block min-h-11 my-4 font-semibold text-slate-100",
                             )}
                             render={<Link href={link.href}>{link.title}</Link>}
                             href={link.href}
@@ -110,11 +99,11 @@ export default function NavigationSection() {
                           />
                         </NavigationMenuItem>
                       ))}
-                    </div>
+                    </NavigationMenuList>
                   </div>
                 </SheetContent>
               </Sheet>
-            </div>
+            </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
       </nav>
