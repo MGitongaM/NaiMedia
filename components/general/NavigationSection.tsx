@@ -40,10 +40,7 @@ export default function NavigationSection() {
         <NavigationMenu className=" bg-slate-900/80 backdrop-blur-md min-w-[94dvw] lg:min-w-[88dvw] rounded-sm mx-auto   top-1 left-2 sm:left-6 lg:left-20">
           <NavigationMenuList className=" flex py-2">
             <NavigationMenuItem className="pl-1 flex-1 lg:pl-10">
-              <NavigationMenuLink
-                href="/"
-                className="bg-transparent hover:bg-transparent"
-              >
+              <Link href="/" className="bg-transparent hover:bg-transparent">
                 <CloudinaryImage
                   imgSrc={"NaiMediaKenyalogo_2"}
                   height={400}
@@ -51,15 +48,15 @@ export default function NavigationSection() {
                   alt={`NaiMedia Kenya logo image`}
                   classNames={"object-contain h-auto w-40  p-2 rounded-sm"}
                 />
-              </NavigationMenuLink>
+              </Link>
             </NavigationMenuItem>
             {/* desktop navigation */}
             <div className="hidden lg:block flex-1 bg-amber-2000">
-              <div className="grid place-content-center mr-0 lg:mr-">
-                <NavigationMenuItem>
-                  {navLinks.map((link) => (
+              {/* <div className="grid place-content-center mr-0 lg:mr-"> */}
+              <div className="flex gap-x-2 mr-0 lg:mr-">
+                {navLinks.map((link) => (
+                  <NavigationMenuItem key={link.id} >
                     <NavigationMenuLink
-                      key={link.id}
                       className={cn(
                         navigationMenuTriggerStyle(),
                         "text-slate-100 rounded-sm focus:text-slate-950 font-bold hover:text-slate-950 hover:bg-fuchsia-200",
@@ -67,8 +64,8 @@ export default function NavigationSection() {
                       render={<Link href={link.href}>{link.title}</Link>}
                       href={link.href}
                     />
-                  ))}
-                </NavigationMenuItem>
+                  </NavigationMenuItem>
+                ))}
               </div>
             </div>
             {/* <div className="bg-red-500"> */}
@@ -78,10 +75,8 @@ export default function NavigationSection() {
                 className=" inline-block cursor-pointer rounded-md font-bold bg-fuchsia-200 text-slate-900 hover:text-slate-900 hover:shadow-lg hover:bg-fuchsia-300"
                 render={
                   <Button className="  hover:scale-110 transition-all transition-discrete ease-linear duration-500 shadow-md">
-                      <Link href="/contact-us">
-                      Get AV Quote
-                  </Link>
-                    </Button>
+                    <Link href="/contact-us">Get AV Quote</Link>
+                  </Button>
                 }
               />
             </NavigationMenuItem>
@@ -101,11 +96,10 @@ export default function NavigationSection() {
                     <SheetDescription></SheetDescription>
                   </SheetHeader>
                   <div className="c">
-                    <div className="flex flex-col justify-center items-center gap-8 list-none">
-                      <NavigationMenuItem>
-                        {navLinks.map((link) => (
+                    <div className="flex flex-col justify-center items-center  list-none">
+                      {navLinks.map((link) => (
+                        <NavigationMenuItem key={link.id}>
                           <NavigationMenuLink
-                            key={link.id}
                             className={cn(
                               navigationMenuTriggerStyle(),
                               "block my-4 font-semibold  text-slate-100",
@@ -114,8 +108,8 @@ export default function NavigationSection() {
                             href={link.href}
                             onClick={() => setOpen(false)}
                           />
-                        ))}
-                      </NavigationMenuItem>
+                        </NavigationMenuItem>
+                      ))}
                     </div>
                   </div>
                 </SheetContent>
