@@ -5,8 +5,8 @@ import CloudinaryImage from "../mediaAssets/CloudinaryImage";
 export default function TestimonialSection() {
   return (
     <>
-      <section className="bg-gray-300 min-h-dvh ">
-        <div className="container mx-auto px-4 py-20">
+      <section className="bg-emerald-50 min-h-[90dvh] ">
+        <div className="container mx-auto px-4 pt-20">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">Testimonials</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-40 gap-y-28 md:gap-y-40 mt-20">
             {Testimonials.map((testimonial) => (

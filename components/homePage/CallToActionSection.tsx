@@ -4,9 +4,9 @@ import { Button } from "../ui/button";
 export default function CallToActionSection() {
   return (
     <>
-      <section className="bg-emerald-700/20 ">
-        <div className="container my-30 px-2">
-          <div className="max-w-4xl mx-auto rounded-md hover:scale-105 hover:shadow-md transition-all transition-discrete ease-linear duration-500 bg-lime-600/20 ">
+      <section className="bg-purple-900/10 min-h-[50dvh] flex justify-center items-center">
+        <div className="container my-28  px-2">
+          <div className="max-w-4xl mx-auto rounded-md hover:scale-105 hover:shadow-md transition-all transition-discrete ease-linear duration-500 bg-lime-600/80 ">
             <div className="grid place-content-center text-center px-4 py-12">
               <h3 className="text-2xl font-extrabold mb-4">
                 Ready to Elevate Your Next Event?

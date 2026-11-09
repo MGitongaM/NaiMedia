@@ -5,7 +5,8 @@ import Link from 'next/link'
 export default function CallToActionSection1() {
   return (
     <>
-    <section className="bg-emerald-700/20 bg-[url('https://res.cloudinary.com/hqho8qw7/image/upload/v1788944360/abstract-1.jpg')]   bg-cover bg-center bg-no-repeat ">
+    {/* <section className="bg-emerald-700/20 min-h-[50dvh] flex justify-center items-center bg-[url('https://res.cloudinary.com/hqho8qw7/image/upload/v1788944360/abstract-1.jpg')]   bg-cover bg-center bg-no-repeat "> */}
+    <section className="bg-purple-900/20 min-h-[50dvh] flex justify-center items-center  ">
         <div className="container my-30 px-2">
              <div className="max-w-4xl mx-auto rounded-md hover:scale-105 hover:shadow-md transition-all transition-discrete ease-linear duration-500 bg-lime-600/80">
             <div className="grid place-content-center text-center px-4 py-12">

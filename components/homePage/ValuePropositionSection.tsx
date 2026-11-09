@@ -1,7 +1,7 @@
 export default function ValuePropositionSection() {
   return (
     <>
-      <section className="bg-gray-400 min-h-[50dvh] ">
+      <section className="bg-gray-100 min-h-[50dvh] ">
         <div className="container mx-auto px-4 py-20">
           <h2 className="text-4xl md:text-5xl font-bold text-center">
             Why Work With Us
