@@ -33,25 +33,20 @@ export default function FooterSection() {
               <div className="grid place-content-center ">
                 <p className="text-sm text-center">Connect with us</p>
                 <div className="flex space-x-4 mt-4">
-                  <a  href="facebook.com" target="_blank"   className="bg-slate-100 rounded-full p-2 hover:scale-95 transition-all transition-discrete ease-linear duration-500">
-                    {" "}
-                    <Facebook className="h-6 w-6" />
+                  <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="NaiMedia Kenya on Facebook" className="bg-slate-100 rounded-full p-2 hover:scale-95 transition-all transition-discrete ease-linear duration-500">
+                    <Facebook className="h-6 w-6" aria-hidden="true" />
                   </a>
-                  <a  href="x.com" target="_blank"   className="bg-slate-100 rounded-full p-2 hover:scale-95 transition-all transition-discrete ease-linear duration-500">
-                    {" "}
-                    <X className="h-6 w-6" />
+                  <a href="https://x.com" target="_blank" rel="noreferrer" aria-label="NaiMedia Kenya on X" className="bg-slate-100 rounded-full p-2 hover:scale-95 transition-all transition-discrete ease-linear duration-500">
+                    <X className="h-6 w-6" aria-hidden="true" />
                   </a>
-                  <a  href="instagram.com" target="_blank"   className="bg-slate-100 rounded-full p-2 hover:scale-95 transition-all transition-discrete ease-linear duration-500">
-                    {" "}
-                    <Instagram className="h-6 w-6" />
+                  <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="NaiMedia Kenya on Instagram" className="bg-slate-100 rounded-full p-2 hover:scale-95 transition-all transition-discrete ease-linear duration-500">
+                    <Instagram className="h-6 w-6" aria-hidden="true" />
                   </a>
-                  <a  href="linkedin" target="_blank"   className="bg-slate-100 rounded-full p-2 hover:scale-95 transition-all transition-discrete ease-linear duration-500">
-                    {" "}
-                    <Linkedin className="h-6 w-6" />
+                  <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="NaiMedia Kenya on LinkedIn" className="bg-slate-100 rounded-full p-2 hover:scale-95 transition-all transition-discrete ease-linear duration-500">
+                    <Linkedin className="h-6 w-6" aria-hidden="true" />
                   </a>
-                  <a  href="youtube.com" target="_blank"   className="bg-slate-100 rounded-full p-2 hover:scale-95 transition-all transition-discrete ease-linear duration-500">
-                    {" "}
-                    <Youtube className="h-6 w-6" />
+                  <a href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="NaiMedia Kenya on YouTube" className="bg-slate-100 rounded-full p-2 hover:scale-95 transition-all transition-discrete ease-linear duration-500">
+                    <Youtube className="h-6 w-6" aria-hidden="true" />
                   </a>
                 </div>
               </div>

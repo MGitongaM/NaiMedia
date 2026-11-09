@@ -44,7 +44,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col overflow-x-hidden">
         <NavigationSection/>
-        {children}
+        <main className="flex-1">{children}</main>
         <Toaster position="top-right"/>
       <FooterSection/>
       </body>
